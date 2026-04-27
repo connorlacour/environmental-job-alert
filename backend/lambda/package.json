@@ -1,0 +1,16 @@
+{
+  "name": "environmental-job-alert-lambda",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.0.0",
+    "web-push": "^3.6.7"
+  },
+  "engines": {
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
+  }
+}

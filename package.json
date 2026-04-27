@@ -1,0 +1,12 @@
+{
+  "name": "environmental-job-alert",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter frontend dev",
+    "build": "pnpm --filter frontend build",
+    "infra:deploy": "pnpm --filter environmental-job-alert-infra run deploy"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}
