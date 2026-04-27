@@ -33,6 +33,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build
+        working-directory: frontend
         run: pnpm build
         env:
           VITE_API_URL: ${{ secrets.VITE_API_URL }}
