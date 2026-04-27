@@ -95,6 +95,7 @@ export function useJobs() {
   }
 
   async function fetchJobs() {
+    if (!apiConfigured) { loading.value = false; return }
     loading.value = true
     try {
       const res = await fetch(`${apiUrl}/jobs`)
