@@ -1,0 +1,32 @@
+{
+  "name": "environmental-job-alert-infra",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "bootstrap": "AWS_PROFILE=personal cdk bootstrap",
+    "synth": "AWS_PROFILE=personal cdk synth",
+    "diff": "AWS_PROFILE=personal cdk diff",
+    "deploy": "AWS_PROFILE=personal cdk deploy",
+    "destroy": "AWS_PROFILE=personal cdk destroy"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.171.0",
+    "constructs": "^10.0.0",
+    "dotenv": "^16.4.5",
+    "source-map-support": "^0.5.21"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "aws-cdk": "2.171.0",
+    "esbuild": "^0.24.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.8.0"
+  },
+  "engines": {
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
+  }
+}
